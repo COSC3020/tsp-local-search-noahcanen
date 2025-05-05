@@ -82,6 +82,12 @@ So O(n! * n)
 The memory complexity is O(n) because we have only one list of cities that we keep swapping around.
 
 
+For this assignment, I used the resources of https://www.geeksforgeeks.org/factorial-of-a-number-using-javascript/ https://www.geeksforgeeks.org/how-to-shuffle-an-array-using-javascript/, https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+
+
+"I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice."
+
+
 
 
 
