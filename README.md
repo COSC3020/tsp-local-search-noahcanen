@@ -50,3 +50,39 @@ Test your new function; I've provided some basic testing code in `code.test.js`.
 What is the worst-case asymptotic time complexity of your implementation? What
 is the worst-case asymptotic memory complexity? Add your answer, including your
 reasoning, to this markdown file.
+
+
+1st, I create my search number using a function called factorial. Factorial's complexity is n
+
+
+2nd, I create a list of cities The complexity of this process is n
+
+
+3rd I randomized my list of cities, the complexity of this is n
+
+
+4th I use a for loop to search through half the possible valuations, so n!/2
+
+
+5th Inside the for loop, I calculate the distance of the tour that has a complexity of n
+
+
+6th inside for loop, I do optSwap in the worst case scenario, this has a complexity of n
+
+
+7th I calculated the distance of the last tour made so n
+
+
+So the complexity equation is n + n + n + n!/2 ( n + n ) +n = 4n + n! * n
+
+
+So O(n! * n)
+
+
+The memory complexity is O(n) because we have only one list of cities that we keep swapping around.
+
+
+
+
+
+
