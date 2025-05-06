@@ -50,3 +50,45 @@ Test your new function; I've provided some basic testing code in `code.test.js`.
 What is the worst-case asymptotic time complexity of your implementation? What
 is the worst-case asymptotic memory complexity? Add your answer, including your
 reasoning, to this markdown file.
+
+
+1st, I create my search number
+
+
+2nd, I create a list of cities The complexity of this process is n
+
+
+3rd I randomized my list of cities, the complexity of this is n
+
+
+4th I use a for loop to search through half the possible valuations, so n^2
+
+
+5th Inside the for loop, I calculate the distance of the tour that has a complexity of n
+
+
+6th inside for loop, I do optSwap in the worst case scenario, this has a complexity of n
+
+
+7th I calculated the distance of the last tour made so n
+
+
+So the complexity equation is  n + n + n^2 ( n + n ) + n = $3n + 2n^3$
+
+
+So O($n^3$)
+
+
+The memory complexity is O(n) because we have only one list of cities that we keep swapping around.
+
+
+For this assignment, I used the resources of https://www.geeksforgeeks.org/factorial-of-a-number-using-javascript/ https://www.geeksforgeeks.org/how-to-shuffle-an-array-using-javascript/, https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+
+
+"I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice."
+
+
+
+
+
+
