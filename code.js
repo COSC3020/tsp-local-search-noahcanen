@@ -1,11 +1,9 @@
 function tsp_ls(distance_matrix) {
 
-    // There are N! Different ways for a list to be sorted so if I want to go through all the different 
-    // possibilities I would need to run through all n! Of them, however for larger numbers that will 
-    // take a lot of time so I will divide N! In half this still will take a lot of time but less time. And
-    //  this will at the very least give me a 50% chance of finding the smallest path if there is only one smallest path.
+    // There are N! Different ways for a list to be sorted, so if I want to go through all the different 
+    // But because this is a local search, we cannot look at all the possibilities, so we will search through n^2 possibilities
 
-    Search = factorial(distance_matrix.length)/2
+    Search = distance_matrix.length ^ 2 
     cities = []
     for (var i = 0; i < distance_matrix.length; i++) {cities.push(i)}
     cities = RandomizedList(cities)
