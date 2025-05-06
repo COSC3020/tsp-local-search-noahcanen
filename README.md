@@ -52,7 +52,7 @@ is the worst-case asymptotic memory complexity? Add your answer, including your
 reasoning, to this markdown file.
 
 
-1st, I create my search number using a function called factorial. Factorial's complexity is n
+1st, I create my search number
 
 
 2nd, I create a list of cities The complexity of this process is n
@@ -61,7 +61,7 @@ reasoning, to this markdown file.
 3rd I randomized my list of cities, the complexity of this is n
 
 
-4th I use a for loop to search through half the possible valuations, so n!/2
+4th I use a for loop to search through half the possible valuations, so n^2
 
 
 5th Inside the for loop, I calculate the distance of the tour that has a complexity of n
@@ -73,10 +73,10 @@ reasoning, to this markdown file.
 7th I calculated the distance of the last tour made so n
 
 
-So the complexity equation is n + n + n + n!/2 ( n + n ) +n = 4n + n! * n
+So the complexity equation is  n + n + n^2 ( n + n ) + n = $3n + 2n^3$
 
 
-So O(n! * n)
+So O($n^3$)
 
 
 The memory complexity is O(n) because we have only one list of cities that we keep swapping around.
